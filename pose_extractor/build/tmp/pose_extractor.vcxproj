@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4315FE81-34AE-3EC3-BA9A-38C95925C508}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>pose_extractor</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\build\tmp\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pose_extractor.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pose_extractor</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.pyd</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\build\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pose_extractor.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pose_extractor</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.pyd</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\build\tmp\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">pose_extractor.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">pose_extractor</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.pyd</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\build\tmp\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">pose_extractor.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">pose_extractor</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.pyd</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\src;C:\Users\Ng\Anaconda3\include;C:\Users\Ng\Anaconda3\envs\opencv\lib\site-packages\numpy\core\include;C:\Users\Ng\Anaconda3\envs\opencv\Library\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";pose_extractor_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";pose_extractor_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\src;C:\Users\Ng\Anaconda3\include;C:\Users\Ng\Anaconda3\envs\opencv\lib\site-packages\numpy\core\include;C:\Users\Ng\Anaconda3\envs\opencv\Library\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\src;C:\Users\Ng\Anaconda3\include;C:\Users\Ng\Anaconda3\envs\opencv\lib\site-packages\numpy\core\include;C:\Users\Ng\Anaconda3\envs\opencv\Library\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\build\tmp
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E __create_def C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp/pose_extractor.dir/$(Configuration)/exports.def C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp/pose_extractor.dir/Debug//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\Ng\Anaconda3\libs\python37.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_gapi420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_stitching420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_aruco420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_bgsegm420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_ccalib420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_cvv420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_dnn_objdetect420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_dnn_superres420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_dpm420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_face420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_fuzzy420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_hfs420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_img_hash420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_line_descriptor420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_quality420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_reg420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_rgbd420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_saliency420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_stereo420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_structured_light420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_superres420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_surface_matching420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_tracking420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_videostab420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_xfeatures2d420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_xobjdetect420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_xphoto420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_shape420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_highgui420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_datasets420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_plot420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_text420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_dnn420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_ml420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_phase_unwrapping420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_optflow420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_ximgproc420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_video420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_videoio420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_imgcodecs420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_objdetect420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_calib3d420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_features2d420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_flann420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_photo420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_imgproc420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_core420.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp/Debug/pose_extractor.lib</ImportLibrary>
+      <ModuleDefinitionFile>C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp/pose_extractor.dir/$(Configuration)/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp/Debug/pose_extractor.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\src;C:\Users\Ng\Anaconda3\include;C:\Users\Ng\Anaconda3\envs\opencv\lib\site-packages\numpy\core\include;C:\Users\Ng\Anaconda3\envs\opencv\Library\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";pose_extractor_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";pose_extractor_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\src;C:\Users\Ng\Anaconda3\include;C:\Users\Ng\Anaconda3\envs\opencv\lib\site-packages\numpy\core\include;C:\Users\Ng\Anaconda3\envs\opencv\Library\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\src;C:\Users\Ng\Anaconda3\include;C:\Users\Ng\Anaconda3\envs\opencv\lib\site-packages\numpy\core\include;C:\Users\Ng\Anaconda3\envs\opencv\Library\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\build\tmp
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E __create_def C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp/pose_extractor.dir/$(Configuration)/exports.def C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp/pose_extractor.dir/Release//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\Ng\Anaconda3\libs\python37.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_gapi420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_stitching420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_aruco420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_bgsegm420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_ccalib420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_cvv420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_dnn_objdetect420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_dnn_superres420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_dpm420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_face420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_fuzzy420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_hfs420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_img_hash420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_line_descriptor420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_quality420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_reg420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_rgbd420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_saliency420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_stereo420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_structured_light420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_superres420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_surface_matching420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_tracking420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_videostab420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_xfeatures2d420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_xobjdetect420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_xphoto420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_shape420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_highgui420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_datasets420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_plot420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_text420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_dnn420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_ml420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_phase_unwrapping420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_optflow420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_ximgproc420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_video420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_videoio420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_imgcodecs420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_objdetect420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_calib3d420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_features2d420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_flann420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_photo420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_imgproc420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_core420.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp/pose_extractor.lib</ImportLibrary>
+      <ModuleDefinitionFile>C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp/pose_extractor.dir/$(Configuration)/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/pose_extractor.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\src;C:\Users\Ng\Anaconda3\include;C:\Users\Ng\Anaconda3\envs\opencv\lib\site-packages\numpy\core\include;C:\Users\Ng\Anaconda3\envs\opencv\Library\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";pose_extractor_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";pose_extractor_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\src;C:\Users\Ng\Anaconda3\include;C:\Users\Ng\Anaconda3\envs\opencv\lib\site-packages\numpy\core\include;C:\Users\Ng\Anaconda3\envs\opencv\Library\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\src;C:\Users\Ng\Anaconda3\include;C:\Users\Ng\Anaconda3\envs\opencv\lib\site-packages\numpy\core\include;C:\Users\Ng\Anaconda3\envs\opencv\Library\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\build\tmp
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E __create_def C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp/pose_extractor.dir/$(Configuration)/exports.def C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp/pose_extractor.dir/MinSizeRel//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\Ng\Anaconda3\libs\python37.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_gapi420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_stitching420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_aruco420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_bgsegm420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_ccalib420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_cvv420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_dnn_objdetect420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_dnn_superres420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_dpm420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_face420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_fuzzy420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_hfs420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_img_hash420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_line_descriptor420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_quality420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_reg420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_rgbd420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_saliency420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_stereo420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_structured_light420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_superres420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_surface_matching420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_tracking420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_videostab420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_xfeatures2d420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_xobjdetect420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_xphoto420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_shape420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_highgui420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_datasets420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_plot420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_text420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_dnn420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_ml420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_phase_unwrapping420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_optflow420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_ximgproc420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_video420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_videoio420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_imgcodecs420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_objdetect420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_calib3d420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_features2d420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_flann420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_photo420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_imgproc420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_core420.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp/MinSizeRel/pose_extractor.lib</ImportLibrary>
+      <ModuleDefinitionFile>C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp/pose_extractor.dir/$(Configuration)/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp/MinSizeRel/pose_extractor.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\src;C:\Users\Ng\Anaconda3\include;C:\Users\Ng\Anaconda3\envs\opencv\lib\site-packages\numpy\core\include;C:\Users\Ng\Anaconda3\envs\opencv\Library\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";pose_extractor_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";pose_extractor_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\src;C:\Users\Ng\Anaconda3\include;C:\Users\Ng\Anaconda3\envs\opencv\lib\site-packages\numpy\core\include;C:\Users\Ng\Anaconda3\envs\opencv\Library\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\src;C:\Users\Ng\Anaconda3\include;C:\Users\Ng\Anaconda3\envs\opencv\lib\site-packages\numpy\core\include;C:\Users\Ng\Anaconda3\envs\opencv\Library\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\build\tmp
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -E __create_def C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp/pose_extractor.dir/$(Configuration)/exports.def C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp/pose_extractor.dir/RelWithDebInfo//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\Ng\Anaconda3\libs\python37.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_gapi420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_stitching420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_aruco420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_bgsegm420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_ccalib420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_cvv420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_dnn_objdetect420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_dnn_superres420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_dpm420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_face420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_fuzzy420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_hfs420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_img_hash420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_line_descriptor420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_quality420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_reg420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_rgbd420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_saliency420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_stereo420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_structured_light420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_superres420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_surface_matching420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_tracking420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_videostab420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_xfeatures2d420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_xobjdetect420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_xphoto420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_shape420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_highgui420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_datasets420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_plot420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_text420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_dnn420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_ml420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_phase_unwrapping420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_optflow420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_ximgproc420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_video420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_videoio420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_imgcodecs420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_objdetect420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_calib3d420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_features2d420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_flann420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_photo420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_imgproc420.lib;C:\Users\Ng\Anaconda3\envs\opencv\Library\lib\opencv_core420.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp/RelWithDebInfo/pose_extractor.lib</ImportLibrary>
+      <ModuleDefinitionFile>C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp/pose_extractor.dir/$(Configuration)/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp/RelWithDebInfo/pose_extractor.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor -BC:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp --check-stamp-file C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeFindFrameworks.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\FindPythonInterp.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\FindPythonLibs.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\SelectLibraryConfigurations.cmake;C:\Users\Ng\Anaconda3\envs\opencv\Library\cmake\OpenCVConfig-version.cmake;C:\Users\Ng\Anaconda3\envs\opencv\Library\cmake\OpenCVConfig.cmake;C:\Users\Ng\Anaconda3\envs\opencv\Library\cmake\x64\vc14\lib\OpenCVConfig.cmake;C:\Users\Ng\Anaconda3\envs\opencv\Library\cmake\x64\vc14\lib\OpenCVModules-release.cmake;C:\Users\Ng\Anaconda3\envs\opencv\Library\cmake\x64\vc14\lib\OpenCVModules.cmake;C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\build\tmp\CMakeFiles\3.16.3\CMakeCCompiler.cmake;C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\build\tmp\CMakeFiles\3.16.3\CMakeCXXCompiler.cmake;C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\build\tmp\CMakeFiles\3.16.3\CMakeRCCompiler.cmake;C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\build\tmp\CMakeFiles\3.16.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\build\tmp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor -BC:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp --check-stamp-file C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeFindFrameworks.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\FindPythonInterp.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\FindPythonLibs.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\SelectLibraryConfigurations.cmake;C:\Users\Ng\Anaconda3\envs\opencv\Library\cmake\OpenCVConfig-version.cmake;C:\Users\Ng\Anaconda3\envs\opencv\Library\cmake\OpenCVConfig.cmake;C:\Users\Ng\Anaconda3\envs\opencv\Library\cmake\x64\vc14\lib\OpenCVConfig.cmake;C:\Users\Ng\Anaconda3\envs\opencv\Library\cmake\x64\vc14\lib\OpenCVModules-release.cmake;C:\Users\Ng\Anaconda3\envs\opencv\Library\cmake\x64\vc14\lib\OpenCVModules.cmake;C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\build\tmp\CMakeFiles\3.16.3\CMakeCCompiler.cmake;C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\build\tmp\CMakeFiles\3.16.3\CMakeCXXCompiler.cmake;C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\build\tmp\CMakeFiles\3.16.3\CMakeRCCompiler.cmake;C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\build\tmp\CMakeFiles\3.16.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\build\tmp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor -BC:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp --check-stamp-file C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeFindFrameworks.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\FindPythonInterp.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\FindPythonLibs.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\SelectLibraryConfigurations.cmake;C:\Users\Ng\Anaconda3\envs\opencv\Library\cmake\OpenCVConfig-version.cmake;C:\Users\Ng\Anaconda3\envs\opencv\Library\cmake\OpenCVConfig.cmake;C:\Users\Ng\Anaconda3\envs\opencv\Library\cmake\x64\vc14\lib\OpenCVConfig.cmake;C:\Users\Ng\Anaconda3\envs\opencv\Library\cmake\x64\vc14\lib\OpenCVModules-release.cmake;C:\Users\Ng\Anaconda3\envs\opencv\Library\cmake\x64\vc14\lib\OpenCVModules.cmake;C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\build\tmp\CMakeFiles\3.16.3\CMakeCCompiler.cmake;C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\build\tmp\CMakeFiles\3.16.3\CMakeCXXCompiler.cmake;C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\build\tmp\CMakeFiles\3.16.3\CMakeRCCompiler.cmake;C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\build\tmp\CMakeFiles\3.16.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\build\tmp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor -BC:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp --check-stamp-file C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeFindFrameworks.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\FindPythonInterp.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\FindPythonLibs.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\share\cmake-3.16\Modules\SelectLibraryConfigurations.cmake;C:\Users\Ng\Anaconda3\envs\opencv\Library\cmake\OpenCVConfig-version.cmake;C:\Users\Ng\Anaconda3\envs\opencv\Library\cmake\OpenCVConfig.cmake;C:\Users\Ng\Anaconda3\envs\opencv\Library\cmake\x64\vc14\lib\OpenCVConfig.cmake;C:\Users\Ng\Anaconda3\envs\opencv\Library\cmake\x64\vc14\lib\OpenCVModules-release.cmake;C:\Users\Ng\Anaconda3\envs\opencv\Library\cmake\x64\vc14\lib\OpenCVModules.cmake;C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\build\tmp\CMakeFiles\3.16.3\CMakeCCompiler.cmake;C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\build\tmp\CMakeFiles\3.16.3\CMakeCXXCompiler.cmake;C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\build\tmp\CMakeFiles\3.16.3\CMakeRCCompiler.cmake;C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\build\tmp\CMakeFiles\3.16.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\build\tmp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\wrapper.cpp" />
+    <ClInclude Include="C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\src\extract_poses.hpp" />
+    <ClCompile Include="C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\src\extract_poses.cpp" />
+    <ClInclude Include="C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\src\human_pose.hpp" />
+    <ClCompile Include="C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\src\human_pose.cpp" />
+    <ClInclude Include="C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\src\peak.hpp" />
+    <ClCompile Include="C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\src\peak.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\lightweight-human-pose-estimation-3d-demo.pytorch-master\pose_extractor\build\tmp\ZERO_CHECK.vcxproj">
+      <Project>{7A622683-D3C1-3125-97DB-85C6CFF05EEA}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

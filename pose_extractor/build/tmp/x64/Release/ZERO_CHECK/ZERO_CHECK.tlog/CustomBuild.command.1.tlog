@@ -1,0 +1,10 @@
+^C:\LIGHTWEIGHT-HUMAN-POSE-ESTIMATION-3D-DEMO.PYTORCH-MASTER\POSE_EXTRACTOR\BUILD\TMP\CMAKEFILES\1216C0B990AEB0BE4AD2453E38869A82\GENERATE.STAMP.RULE
+setlocal
+C:\Users\Ng\Anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor -BC:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp/pose_extractor.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

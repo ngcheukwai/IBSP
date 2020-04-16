@@ -1,0 +1,4 @@
+C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp/pose_extractor.dir/Debug/wrapper.obj
+C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp/pose_extractor.dir/Debug/extract_poses.obj
+C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp/pose_extractor.dir/Debug/human_pose.obj
+C:/lightweight-human-pose-estimation-3d-demo.pytorch-master/pose_extractor/build/tmp/pose_extractor.dir/Debug/peak.obj
